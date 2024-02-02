@@ -7,6 +7,18 @@
     <title>Document</title>
 </head>
 <style>
+        #img2:hover{
+            filter: hue-rotate(90deg);
+        }
+         #img3:hover{
+            opacity: 50%;
+        }
+        #img4:hover{
+            clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+        }
+        #filterDiv{
+            border-image: repeating-linear-gradient(30deg, #4d9f0c, #9198e5, #4d9f0c 20px) 60;
+        }
     div{
         display: flexbox;
         flex-wrap: wrap;
@@ -52,7 +64,7 @@
             <figure>
               <picture>
                 <source srcset="" type="img/webp">
-                <img src="2.webp" alt="concierto2">
+                <img id="img2" src="2.webp" alt="concierto2">
                 </picture>
                 <figcaption>Imagen</figcaption>
             </figure>
@@ -62,7 +74,7 @@
             <figure>
               <picture>
                 <source srcset="" type="img/webp">
-                <img src="3.webp" alt="concierto3">
+                <img id="img3" src="3.webp" alt="concierto3">
                 </picture>
                 <figcaption>Imagen</figcaption>
             </figure>
@@ -73,13 +85,13 @@
               <picture>
                 <source srcset="" type="img/webp">
                 <source srcset="" type="img/webp">
-                <img src="4.webp" alt="concierto4">
+                <img id="img4" src="4.webp" alt="concierto4">
               </picture>
               <figcaption>Imagen</figcaption>
             </figure>
         </div>
 
-        <div>
+        <div id="filterDiv">
             <figure>
               <picture>
                 <source srcset="" type="img/webp">
